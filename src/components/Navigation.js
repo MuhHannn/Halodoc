@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Navigation = (props) => {
     return (
         <Navbar bg="light" expand="lg" style={{border: "1px solid gray"}}>
-          <Container>
+          <Container className="p-0">
             <Navbar.Brand href="#">
               <img src={props.image} alt='logo' style={{width: "150px"}}></img>
             </Navbar.Brand>
@@ -24,7 +24,9 @@ const Navigation = (props) => {
                 <Nav.Link href="#action4" className="px-4" style={{color: "black"}}>Riwayat</Nav.Link>
               </Nav>
               <Form className="d-flex">
-                <Button variant="danger">Login</Button>
+                <div>
+                  <Button variant="danger">Login</Button>
+                </div>
               </Form>
             </Navbar.Collapse>
           </Container>
